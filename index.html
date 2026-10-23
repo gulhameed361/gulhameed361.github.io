@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gul Hameed — Optimisation Scientist</title>
+<meta name="description" content="Gul Hameed: optimisation scientist and Modelling Specialist at AstraZeneca. PhD in trust-region grey-box optimisation, University of Surrey.">
+<meta property="og:title" content="Gul Hameed — Optimisation Scientist">
+<meta property="og:description" content="Optimisation methods, process and energy modelling, and scientific software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfbfa; --surface: #ffffff; --text: #1c2230; --muted: #5a6475; --line: #e4e6ea;
+  --accent: #1f4e9c; --accent-soft: #e9effa; --tag: #f1f3f6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1218; --surface: #161a22; --text: #e6e9ef; --muted: #9aa3b2; --line: #262c37;
+    --accent: #8db4ff; --accent-soft: #1b2638; --tag: #1d222c;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1218; --surface: #161a22; --text: #e6e9ef; --muted: #9aa3b2; --line: #262c37;
+  --accent: #8db4ff; --accent-soft: #1b2638; --tag: #1d222c;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+nav { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+nav .wrap { display: flex; align-items: center; gap: 18px; height: 54px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
+nav .wrap::-webkit-scrollbar { display: none; }
+nav .brand { font-weight: 700; color: var(--text); margin-right: auto; }
+nav a.link { color: var(--muted); font-size: 14px; }
+nav button { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 8px; padding: 4px 9px; cursor: pointer; font: inherit; font-size: 13px; }
+header { padding: 64px 0 40px; }
+h1 { font-family: "Source Serif 4", Georgia, serif; font-size: clamp(36px, 7vw, 52px); line-height: 1.1; margin: 0 0 10px; letter-spacing: -0.5px; }
+.intro { display: flex; gap: 32px; align-items: center; flex-direction: row-reverse; justify-content: space-between; }
+.photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 3px solid var(--surface); box-shadow: 0 0 0 1px var(--line); }
+.lede { font-size: 19px; color: var(--muted); max-width: 680px; margin: 0 0 24px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { display: inline-block; padding: 9px 16px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font-weight: 500; font-size: 15px; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.btn:hover { text-decoration: none; border-color: var(--accent); }
+section { padding: 36px 0; border-top: 1px solid var(--line); }
+h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1.4px; color: var(--accent); margin: 0 0 20px; }
+h3 { font-size: 18px; margin: 0 0 4px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-top: 24px; }
+.fact { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.fact b { display: block; font-size: 22px; }
+.fact span { color: var(--muted); font-size: 14px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+.card p { margin: 6px 0 10px; color: var(--muted); font-size: 15px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tags span { background: var(--tag); border-radius: 6px; padding: 2px 8px; font-size: 12.5px; color: var(--muted); }
+.timeline .item { display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 12px 0; }
+.timeline .when { color: var(--muted); font-size: 14px; padding-top: 2px; }
+.timeline .org { color: var(--muted); font-size: 15px; }
+.timeline p { margin: 6px 0 0; font-size: 15px; }
+ol.pubs { padding-left: 20px; margin: 0; }
+ol.pubs li { margin-bottom: 10px; font-size: 15px; }
+ol.pubs em { color: var(--muted); }
+ul.plain { padding-left: 18px; margin: 0; }
+ul.plain li { margin-bottom: 6px; font-size: 15px; }
+footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+@media (max-width: 600px) {
+  .timeline .item { grid-template-columns: 1fr; gap: 2px; }
+  header { padding: 40px 0 28px; }
+  nav .wrap { gap: 12px; }
+  nav a.link { font-size: 13px; }
+  nav .brand { display: none; }
+  .intro { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .photo { width: 112px; height: 112px; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Gul Hameed</a>
+    <a class="link" href="#work">Work</a>
+    <a class="link" href="#projects">Projects</a>
+    <a class="link" href="#publications">Publications</a>
+    <a class="link" href="#contact">Contact</a>
+    <button id="theme" aria-label="Toggle colour theme">◐</button>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <header>
+    <div class="intro">
+    <img class="photo" src="photo.jpg" alt="Portrait of Gul Hameed" width="150" height="150">
+    <div>
+    <h1>Gul Hameed</h1>
+    <p class="lede">Optimisation scientist. Modelling Specialist at AstraZeneca, with a PhD in trust-region algorithms for grey-box optimisation from the University of Surrey. I build methods and software that make large, badly behaved engineering models solve reliably and help people make decisions with them.</p>
+    </div>
+    </div>
+    <div class="buttons">
+      <a class="btn primary" href="Gul_Hameed_CV.pdf">Download CV</a>
+      <a class="btn" href="mailto:gulhameed361@gmail.com">Email</a>
+      <a class="btn" href="https://www.linkedin.com/in/gul-hameed-562193175/">LinkedIn</a>
+      <a class="btn" href="https://github.com/gulhameed361">GitHub</a>
+      <a class="btn" href="https://orcid.org/0000-0002-2069-5132">ORCID</a>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>9</b><span>first-author papers, 2 in AIChE Journal</span></div>
+      <div class="fact"><b>Pyomo 6.10.1</b><span>trust-region funnel mechanism contributed</span></div>
+      <div class="fact"><b>~150k</b><span>variables in a full-year hourly dispatch model</span></div>
+      <div class="fact"><b>4 countries</b><span>national energy-planning studies</span></div>
+    </div>
+  </header>
+
+  <section id="work">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="item"><div class="when">Sep 2026 – now</div><div><h3>Modelling Specialist (contract)</h3><div class="org">AstraZeneca, Macclesfield, UK</div>
+        <p>Developing model-agnostic numerical tools for process modelling: sensitivity analysis, parameter estimation and design of experiments.</p></div></div>
+      <div class="item"><div class="when">Jan – Mar 2026</div><div><h3>Visiting Researcher</h3><div class="org">Carnegie Mellon University, Prof Lorenz T. Biegler's group</div>
+        <p>Trust-region grey-box optimisation of carbon capture and utilisation flowsheets with embedded PDAE models (dual-function material reactors, pressure swing adsorption). Contributed the funnel globalisation mechanism to Pyomo's trust-region solver.</p></div></div>
+      <div class="item"><div class="when">2022 – 2026</div><div><h3>Scientific Software Developer, Frameworks and Simulators</h3><div class="org">University of Surrey</div>
+        <p>Built the open-source optimisation tools DECO2 and B-HYPSYS for energy-system planning and dispatch. Wrote the proposals for, and as lead researcher delivered, the £70k RIDA project (FCDO and Research England ODA).</p></div></div>
+      <div class="item"><div class="when">2023 – 2026</div><div><h3>PhD, Chemical &amp; Process Systems Engineering</h3><div class="org">University of Surrey · supervised by Prof Michael Short · thesis submitted</div>
+        <p>Trust-region filter and funnel algorithms for nonlinear grey-box optimisation: convergence guarantees while replacing expensive simulations with data-driven surrogates.</p></div></div>
+      <div class="item"><div class="when">2025</div><div><h3>Plant Manager, Fluor Pilot Plant</h3><div class="org">University of Surrey</div>
+        <p>Trained students to operate a pilot-scale process plant; owned safety, scheduling and data collection.</p></div></div>
+      <div class="item"><div class="when">2022 – 2023</div><div><h3>MSc Renewable Energy Systems Engineering</h3><div class="org">University of Surrey · Distinction, 1st in class</div></div></div>
+      <div class="item"><div class="when">2016 – 2020</div><div><h3>BS Mechanical Engineering</h3><div class="org">Pakistan Institute of Engineering &amp; Applied Sciences</div></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card"><h3>Trust-region grey-box optimisation</h3>
+        <p>A unified framework of filter and funnel algorithms for systems that mix first-principles equations with black-box simulations, with global convergence proved. Steps are accepted by Pareto dominance, and a hypervolume mechanism coordinates several simulators at once: up to 135× fewer simulator evaluations and designs with up to 8% lower cost.</p>
+        <div class="tags"><span>NLP</span><span>Surrogates</span><span>Pareto / hypervolume</span><span>Convergence theory</span></div></div>
+      <div class="card"><h3>Pyomo contribution</h3>
+        <p>Funnel globalisation mechanism for Pyomo's trust-region solver (<a href="https://github.com/Pyomo/pyomo/pull/3832">PR #3832</a>), released in Pyomo 6.10.1. The first solver contribution to Pyomo from the University of Surrey.</p>
+        <div class="tags"><span>Open source</span><span>Python</span></div></div>
+      <div class="card"><h3>DECO2</h3>
+        <p>MILP/MINLP decision support for national energy-system planning: 5,000+ binary and 20,000+ continuous variables, solved through custom two-stage initialisation. Studies for Malaysia, the Philippines, Mauritius and Pakistan.</p>
+        <div class="tags"><span>MINLP</span><span>Gurobi</span><span>BARON</span><span>SCIP</span></div></div>
+      <div class="card"><h3>B-HYPSYS</h3>
+        <p>Design and hourly dispatch of hybrid hydrogen production and storage over a full year (8,760 periods, ~150,000 variables). Staged homotopy and structured multistart make a nonconvex model solve reliably for non-specialist users.</p>
+        <div class="tags"><span>Nonconvex NLP</span><span>IPOPT</span><span>Scheduling</span></div></div>
+      <div class="card"><h3>Process simulator</h3>
+        <p>A flowsheet simulator written from scratch in Python, with custom NLP and trust-region solver orchestration across multi-unit topologies and pytest throughout.</p>
+        <div class="tags"><span>Python</span><span>Streamlit</span><span>pytest</span></div></div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ol class="pubs">
+      <li><a href="https://psecommunity.org/LAPSE:2026.0398">Optimisation of synthetic natural gas production via direct air capture and utilisation using reduced models under a novel trust-region funnel method</a>. <em>Systems and Control Transactions</em> 5 (2026).</li>
+      <li><a href="https://doi.org/10.1002/aic.70258">A trust-region funnel algorithm for grey-box optimisation</a>. <em>AIChE Journal</em> e70258 (2026).</li>
+      <li><a href="https://doi.org/10.1002/aic.70236">Trust-region filter algorithms utilising Hessian information for grey-box optimisation</a>. <em>AIChE Journal</em> e70236 (2026).</li>
+      <li><a href="https://www.sciencedirect.com/science/article/pii/S2211467X25002937">Pathways to decarbonise the power sector in Mauritius</a>. <em>Energy Strategy Reviews</em> 62 (2025) 101930.</li>
+      <li><a href="https://www.sciencedirect.com/science/article/pii/S2211467X25002561">Optimal transition pathways to a net-zero power grid in the Philippines</a>. <em>Energy Strategy Reviews</em> 62 (2025) 101893.</li>
+      <li><a href="https://www.sciencedirect.com/science/chapter/bookseries/pii/B9780443288241501496">Combining energy system planning with carbon emissions trading optimisation for decarbonisation of emerging economies</a>. <em>Computer Aided Chemical Engineering</em> 53 (2024).</li>
+      <li><a href="https://www.sciencedirect.com/science/article/pii/S2352550923001781">A novel mathematical model to incorporate carbon trading and emission reduction techniques within energy planning models</a>. <em>Sustainable Production and Consumption</em> 40 (2023) 571–589.</li>
+      <li><a href="https://www.sciencedirect.com/science/article/pii/S2212982023002172">Experimental optimisation of Ni/P atomic ratio for nickel phosphide catalysts in reverse water-gas shift</a>. <em>Journal of CO2 Utilisation</em> 77 (2023) 102606.</li>
+      <li>Low temperature phase change materials for thermal energy storage: current status and computational perspectives. <em>Sustainable Energy Technologies and Assessments</em> 50 (2022) 101808.</li>
+    </ol>
+  </section>
+
+  <section id="recognition">
+    <h2>Talks &amp; recognition</h2>
+    <ul class="plain">
+      <li>Talks at the SIAM Conference on Optimization (OP26, Edinburgh) and ESCAPE36 (Sheffield), 2026; posters at the CAPD Annual Meeting (CMU, 2026) and ESCAPE34-PSE24 (Florence, 2024)</li>
+      <li>Vice-Chancellor's Award, Postgraduate Researcher of the Year 2024: Faculty winner and University finalist</li>
+      <li>Finalist, IChemE Young Engineers Awards for Innovation and Sustainability (Energy and Climate Action), 2026</li>
+      <li>Keynote and workshops on energy decarbonisation for government and industry, Manila and Kuala Lumpur, 2024</li>
+      <li>Founder and first President, Student Energy Surrey; Chair, Surrey PGR/ECR Conference 2025</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I'm happy to talk about optimisation, process modelling and scientific software. Email <a href="mailto:gulhameed361@gmail.com">gulhameed361@gmail.com</a> or find me on <a href="https://www.linkedin.com/in/gul-hameed-562193175/">LinkedIn</a>.</p>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Gul Hameed · Woking, UK</div></footer>
+
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('theme');
+  try { var saved = localStorage.getItem('theme'); if (saved) root.setAttribute('data-theme', saved); } catch (e) {}
+  btn.addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
