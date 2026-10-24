@@ -67,6 +67,8 @@ ol.pubs li { margin-bottom: 10px; font-size: 15px; }
 ol.pubs em { color: var(--muted); }
 ul.plain { padding-left: 18px; margin: 0; }
 ul.plain li { margin-bottom: 6px; font-size: 15px; }
+.interests span { font-size: 14px; padding: 5px 12px; border-radius: 999px; }
+.langs { color: var(--muted); font-size: 15px; margin: 14px 0 0; }
 footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
 @media (max-width: 600px) {
   .timeline .item { grid-template-columns: 1fr; gap: 2px; }
@@ -84,6 +86,7 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top:
   <div class="wrap">
     <a class="brand" href="#top">Gul Hameed</a>
     <a class="link" href="#work">Work</a>
+    <a class="link" href="#education">Education</a>
     <a class="link" href="#projects">Projects</a>
     <a class="link" href="#publications">Publications</a>
     <a class="link" href="#contact">Contact</a>
@@ -118,18 +121,38 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top:
   <section id="work">
     <h2>Experience</h2>
     <div class="timeline">
-      <div class="item"><div class="when">Sep 2026 – now</div><div><h3>Modelling Specialist (contract)</h3><div class="org">AstraZeneca, Macclesfield, UK</div>
+      <div class="item"><div class="when">Sep 2026 – now</div><div><h3>Modelling Specialist</h3><div class="org">AstraZeneca, Macclesfield, UK</div>
         <p>Developing model-agnostic numerical tools for process modelling: sensitivity analysis, parameter estimation and design of experiments.</p></div></div>
-      <div class="item"><div class="when">Jan – Mar 2026</div><div><h3>Visiting Researcher</h3><div class="org">Carnegie Mellon University, Prof Lorenz T. Biegler's group</div>
+      <div class="item"><div class="when">Jan – Mar 2026</div><div><h3>Visiting Researcher</h3><div class="org">Carnegie Mellon University, Pittsburgh, USA · Prof Lorenz T. Biegler's group</div>
         <p>Trust-region grey-box optimisation of carbon capture and utilisation flowsheets with embedded PDAE models (dual-function material reactors, pressure swing adsorption). Contributed the funnel globalisation mechanism to Pyomo's trust-region solver.</p></div></div>
+      <div class="item"><div class="when">Sep – Dec 2025</div><div><h3>Plant Manager, Fluor Pilot Plant</h3><div class="org">University of Surrey</div>
+        <p>Trained undergraduate and master's students to operate a pilot-scale process plant; owned safety, scheduling and data collection.</p></div></div>
       <div class="item"><div class="when">2022 – 2026</div><div><h3>Scientific Software Developer, Frameworks and Simulators</h3><div class="org">University of Surrey</div>
-        <p>Built the open-source optimisation tools DECO2 and B-HYPSYS for energy-system planning and dispatch. Wrote the proposals for, and as lead researcher delivered, the £70k RIDA project (FCDO and Research England ODA).</p></div></div>
+        <p>Built the open-source optimisation tools DECO2 (ASEAN energy planning, 2024) and B-HYPSYS (hydrogen production and storage, 2024–25). Wrote the proposals for, and as lead researcher delivered, the £70k RIDA project (FCDO and Research England ODA), including workshops and a keynote in Kuala Lumpur and Manila.</p></div></div>
+      <div class="item"><div class="when">2023 – 2024</div><div><h3>Graduate Teaching Assistant</h3><div class="org">University of Surrey</div>
+        <p>Heat transfer laboratory and advanced pharmaceutical formulations.</p></div></div>
+      <div class="item"><div class="when">2022 – 2023</div><div><h3>Research Assistant, Tandem Catalysis</h3><div class="org">University of Surrey · funded by the Royal Society of Chemistry</div>
+        <p>Synthesised, characterised and tested catalysts for CO2 hydrogenation via the reverse water-gas shift reaction, using packed-bed reactors and micro-GC analysis.</p></div></div>
+      <div class="item"><div class="when">2021</div><div><h3>Graduate Trainee Officer (12 months)</h3><div class="org">Oil &amp; Gas Development Company Ltd (OGDCL), Islamabad, Pakistan</div>
+        <p>Process &amp; Plants department: technical evaluation of bids, budget certification, purchase orders and reporting; liaison between field operations and head office.</p></div></div>
+      <div class="item"><div class="when">2020</div><div><h3>Trainee Engineer (4 months)</h3><div class="org">WellServe Oilfield Services, Islamabad, Pakistan</div>
+        <p>Quality control of manufactured and repaired connections, surface treatment and mechanical seals; observed drilling and production operations on an oil rig.</p></div></div>
+      <div class="item"><div class="when">2019 – 2020</div><div><h3>Researcher (13 months)</h3><div class="org">Department of Chemical Engineering, PIEAS, Pakistan</div>
+        <p>Thermal energy storage systems and phase change materials, using CFD; wrote a review article (2022).</p></div></div>
+      <div class="item"><div class="when">2019</div><div><h3>Engineering Intern</h3><div class="org">OGDCL Nashpa Oil &amp; Gas Field, Pakistan</div>
+        <p>HSEQ training; preventive maintenance of a gas engine and compressor; LPG recovery, crude oil and gas production plants.</p></div></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
       <div class="item"><div class="when">2023 – 2026</div><div><h3>PhD, Chemical &amp; Process Systems Engineering</h3><div class="org">University of Surrey · supervised by Prof Michael Short · thesis submitted</div>
         <p>Trust-region filter and funnel algorithms for nonlinear grey-box optimisation: convergence guarantees while replacing expensive simulations with data-driven surrogates.</p></div></div>
-      <div class="item"><div class="when">2025</div><div><h3>Plant Manager, Fluor Pilot Plant</h3><div class="org">University of Surrey</div>
-        <p>Trained students to operate a pilot-scale process plant; owned safety, scheduling and data collection.</p></div></div>
-      <div class="item"><div class="when">2022 – 2023</div><div><h3>MSc Renewable Energy Systems Engineering</h3><div class="org">University of Surrey · Distinction, 1st in class</div></div></div>
-      <div class="item"><div class="when">2016 – 2020</div><div><h3>BS Mechanical Engineering</h3><div class="org">Pakistan Institute of Engineering &amp; Applied Sciences</div></div></div>
+      <div class="item"><div class="when">2022 – 2023</div><div><h3>MSc, Renewable Energy Systems Engineering</h3><div class="org">University of Surrey · Distinction, 1st in class</div>
+        <p>Project: large-scale regional energy-planning models formulated as MINLPs.</p></div></div>
+      <div class="item"><div class="when">2016 – 2020</div><div><h3>BS, Mechanical Engineering</h3><div class="org">Pakistan Institute of Engineering &amp; Applied Sciences (PIEAS) · CGPA 3.26/4.00</div>
+        <p>Final-year project: design and fabrication of a thermal energy storage system.</p></div></div>
     </div>
   </section>
 
@@ -151,6 +174,9 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top:
       <div class="card"><h3>Process simulator</h3>
         <p>A flowsheet simulator written from scratch in Python, with custom NLP and trust-region solver orchestration across multi-unit topologies and pytest throughout.</p>
         <div class="tags"><span>Python</span><span>Streamlit</span><span>pytest</span></div></div>
+      <div class="card"><h3>Thermal energy storage system</h3>
+        <p>Undergraduate R&amp;D project with PIEAS and Electrical Engineering Services: designed and built a thermal energy storage system using a helical-coil heat exchanger and low-temperature phase change materials, backed by PKR 0.8 million in research funding.</p>
+        <div class="tags"><span>Heat exchangers</span><span>Phase change materials</span><span>CFD</span></div></div>
     </div>
   </section>
 
@@ -178,6 +204,12 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top:
       <li>Keynote and workshops on energy decarbonisation for government and industry, Manila and Kuala Lumpur, 2024</li>
       <li>Founder and first President, Student Energy Surrey; Chair, Surrey PGR/ECR Conference 2025</li>
     </ul>
+  </section>
+
+  <section id="interests">
+    <h2>Beyond work</h2>
+    <div class="tags interests"><span>Watches &amp; timepieces</span><span>Travelling</span><span>Hiking</span><span>Tea</span></div>
+    <p class="langs">Languages: Urdu (native), English (professional), French (basic)</p>
   </section>
 
   <section id="contact">
